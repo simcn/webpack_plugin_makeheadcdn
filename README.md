@@ -1,0 +1,2 @@
+# webpack_plugin_makeheadcdn
+webpack插件主要生成页头与CDN
