@@ -1,5 +1,5 @@
 /**
- * semBuild
+ * webpack_plugin_makeheadcdn
  * @description webpack插件主要是加页头时间戳与 amd加载的时间戳
  */
 var ConcatSource = require("webpack/lib/ConcatSource");
