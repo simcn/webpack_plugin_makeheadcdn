@@ -41,7 +41,7 @@ webpack_plugin_makeheadcdn.prototype.apply = function(compiler) {
                 // `/dist/task.v2.0.js?v=__md5__`;
                 // @todo 待优化
                 html = html.replace(/dist\/(.*?.js)\?v=__md5__/g, function($0, $1) {
-                    var filekey = self.options.time; //保底的key
+                    var filekey = self.opts.time; //保底的key
                     self.md5lists.forEach(function(element) {
                         if (element.files[0] == $1) {
                             filekey = element.hash;
@@ -53,7 +53,7 @@ webpack_plugin_makeheadcdn.prototype.apply = function(compiler) {
 
                 //替换时间key, 主要用于站外的CDN过期，也可以用于图片
                 //支持使用 __time__ 的地方当用时间戳
-                html = html.replace(/__time__/g, self.options.time);
+                html = html.replace(/__time__/g, self.opts.time);
 
                 //文件件部;
                 return self.opts.fileHead + "\n" + html;
