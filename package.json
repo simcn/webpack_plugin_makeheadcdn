@@ -1,6 +1,6 @@
 {
   "name": "webpack_plugin_makeheadcdn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webpack插 用于生成资源头部节点与CDN时间戳的",
   "main": "index.js",
   "scripts": {
